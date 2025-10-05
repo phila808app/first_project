@@ -1,3 +1,187 @@
 body {
-    background-color: hsl(33, 12, 100);
+  margin: 0;
+  background-color: #211f21;
+  font-family: Arial, sans-serif;
 }
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #321333, #211f21);
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #dd5656;
+}
+
+.hero h2 {
+  font-weight: 400;
+  color: #ffe600;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #ccc;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #dd5656;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffe600;
+  color: #321333;
+  transform: scale(1.05);
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #321333;
+  padding: 0 20px;
+}
+
+/* Portfolio name (logo/text) */
+.port_name {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Nav links */
+.nav_links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.nav_links li {
+  margin-left: 20px;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: white;
+  padding: 14px 16px;
+  display: block;
+}
+
+.nav_links a:hover {
+  color: rgb(226, 230, 6);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Page heading */
+h1 {
+  font-style: italic;
+  color: #441d1d;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+
+
+
+
+
+/* body {
+    margin: 0;
+    background-color:#211f21;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+.nav_links{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav_links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 14px 16px;
+  display: block;
+}
+
+.nav-links a:hover{
+    color: rgb(226, 230, 6);
+    border-radius: 5px;
+}
+
+h1{
+    font-style: italic;
+    color: #441d1d;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #321333;
+    padding: 0 20px;
+    
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #dd5656;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    
+} 
+
+ ul li{
+   
+    float: left;
+    display: block;
+    color: white;
+    align-items:center;
+    text-align: center;
+    padding: 14px 16px;
+    
+}
+ */
