@@ -3,6 +3,13 @@ body {
   background-color: #211f21;
   font-family: Arial, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 .hero {
   height: 90vh;
   display: flex;
@@ -107,81 +114,96 @@ h1 {
   font-size: 50px;
 }
 
+/* .project-list ul li {
+    display: block;
+   
+} */
 
+section {
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+} 
 
+.about {
+  background-color: #2a1d2b;
+}
 
+.projects {
+  background-color: #211f21;
+}
 
-
-/* body {
-    margin: 0;
-    background-color:#211f21;
-    font-family: Arial, sans-serif;
-    
+.contact {
+  background-color: #321333;
 }
 
 
-.nav_links{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+
+/* Default Navbar Layout */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #321333;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.nav_links li {
-    margin-left: 20px;
+.port_name {
+  color: #ffe600;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.nav-links a {
+.nav_links {
+  display: flex;
+  list-style: none;
+}
+
+.nav_links a {
   text-decoration: none;
   color: white;
   padding: 14px 16px;
   display: block;
 }
 
-.nav-links a:hover{
-    color: rgb(226, 230, 6);
-    border-radius: 5px;
+.nav_links a:hover {
+  color: #ffe600;
 }
 
-h1{
-    font-style: italic;
-    color: #441d1d;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 50px;
+/* Hamburger menu hidden by default */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
 }
 
-
-
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav_links {
+    display: none;
+    flex-direction: column;
     background-color: #321333;
-    padding: 0 20px;
-    
-}
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    border-radius: 10px;
+    text-align: right;
+  }
 
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: #dd5656;
-    overflow: hidden;
+  .nav_links.active {
     display: flex;
-    justify-content: flex-end;
-    
-} 
+  }
 
- ul li{
-   
-    float: left;
+  .hamburger {
     display: block;
-    color: white;
-    align-items:center;
-    text-align: center;
-    padding: 14px 16px;
-    
+  }
+
+  .nav_links a {
+    padding: 12px 20px;
+  }
 }
- */
